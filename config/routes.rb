@@ -2,6 +2,9 @@ Rails.application.routes.draw do
   root 'homepage#index'
 
   # Add routes below this line
+  get 'tasks' => 'taks#index'
+  put '/tasks/:id/mark_complete' => 'tasks#mark_complete'
+  put '/tasks/:id/mark_active' => 'tasks#mark_active'
 
   # Add routes below above line
 
